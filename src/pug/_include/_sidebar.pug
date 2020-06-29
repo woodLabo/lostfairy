@@ -1,0 +1,52 @@
+-
+  const songList = [
+    "虚栄(ヴァニタス)の迷宮",
+    "Yggdrasill",
+    "Gates of Hades",
+    "シアワセの青",
+    "星詠ユーフォリア",
+    "月影トロイメライ",
+    "Arlequin 〜美しき闇に咲く花〜"
+  ];
+
+  const sliderItem = [
+    {
+      title: '「悠久幻想ノスタルジア」now on sale !',
+      href: root + '/ars037.html',
+      src: 'slide_01',
+      alt: '「悠久幻想ノスタルジア」now on sale !',
+    },
+    {
+      title: '「Nostalgia Prelude...」now on sale !',
+      href: 'href',
+      src: 'slide_02',
+      alt: '「Nostalgia Prelude...」now on sale !',
+    },
+  ]
+
+aside
+  if page.is_slider
+    ul.slider__wrap
+      // sliderはここで操作
+      each item in sliderItem
+        li
+          a(href=item.href class="slider__link")
+            p.slider__title #{item.title}
+            img(src=`${imgPath}${item.src}.png` alt=item.alt)
+      //
+          sliderここまで
+  section.sideColumn__wrap
+    .sideColumn__twWrap
+      a(class="twitter-timeline" href="https://twitter.com/Noel_lostfairy" data-widget-id="358871791197880321" width="300" data-chrome="noheader nofooter noscrollbar transparent" data-theme="dark") @Noel_lostfairy からのツイート
+      script.
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      a(href="https://twitter.com/Noel_lostfairy?ref_src=twsrc%5Etfw" class="sideColumn__twFollow" data-show-count="false")
+        img(src=`${imgPath}/button_follow.png`)
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  section.sideColumn__wrap
+    div
+      a(href="http://joysound.com/ex/search/artist.htm?artistId=237777" target="_blank")
+        img(src=`${imgPath}joy1.gif` width="200" height="40")
+    ul
+      each item in songList
+        li #{item}

@@ -1,0 +1,50 @@
+-
+  const navList = [
+    {
+      href: "index",
+      txt: "Top",
+      img: "menu_top",
+    },
+    {
+      href: "profile",
+      txt: "Profile",
+      img: "menu_profile",
+    },
+    {
+      href: "character",
+      txt: "Character",
+      img: "menu_chara",
+    },
+    {
+      href: "discography",
+      txt: "Discography",
+      img: "menu_disco",
+    },
+    {
+      href: "works",
+      txt: "Works",
+      img: "menu_works",
+    },
+    {
+      href: "event",
+      txt: "Event",
+      img: "menu_event",
+    },
+    {
+      href: "shop",
+      txt: "Shop",
+      img: "menu_shop",
+    },
+    {
+      href: "contact",
+      txt: "Contact",
+      img: "menu_contact",
+    },
+  ]
+
+nav
+  ul
+    each nav in navList
+      li
+        a(href=`${nav.href}.html`)
+          img(src=`src/img/${nav.img}.png` alt=nav.txt class="js_srcChange")

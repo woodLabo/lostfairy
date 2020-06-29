@@ -1,0 +1,102 @@
+-
+  const newRelease = {
+    href: root + '/ars037.html',
+    src: imgPath + 'SS/SSj_ars037.jpg',
+    movie: "https://www.youtube.com/embed/A0-vsormxHU"
+  }
+
+  const fantasia = [
+    {
+      href: root + '/ars031.html',
+      src: imgPath + 'SS/SSj_ars031.jpg',
+    },
+    {
+      href: root + '/ars028.html',
+      src: imgPath + 'SS/SSj_ars028.jpg',
+    },
+    {
+      href: root + '/ars026.html',
+      src: imgPath + 'SS/SSj_ars026.jpg',
+    },
+    {
+      href: root + '/ars024.html',
+      src: imgPath + 'SS/SSj_ars024.jpg',
+    },
+    {
+      href: arsPath + '/ars020.html',
+      src: imgPath + 'SS/SSj_ars020.jpg',
+    },
+    {
+      href: arsPath + '/ars016.html',
+      src: imgPath + 'SS/SSj_ars016.jpg',
+    },
+    {
+      href: arsPath + '/ars013.html',
+      src: imgPath + 'SS/SSj_ars013.jpg',
+    },
+    {
+      href: arsPath + '/ars009.html',
+      src: imgPath + 'SS/SSj_ars009.jpg',
+    },
+    {
+      href: arsPath + '/ars006.html',
+      src: imgPath + 'SS/SSj_ars006.jpg',
+    },
+    {
+      href: arsPath + '/ars003.html',
+      src: imgPath + 'SS/SSj_ars003.jpg',
+    },
+  ]
+
+  const omunibus = [
+    {
+      href: 'http://www.rekka.jp/cu/valkyrja',
+      src: imgPath + 'SS/SSj_aohime.jpg',
+    },
+    {
+      href: arsPath + '/ars022.html',
+      src: imgPath + 'SS/SSj_ars022.jpg',
+    },
+    {
+      href: arsPath + '/ars012.html',
+      src: imgPath + 'SS/SSj_ars012.jpg',
+    },
+    {
+      href: arsPath + '/ars005.html',
+      src: imgPath + 'SS/SSj_ars005.jpg',
+    },
+  ]
+
+section.disco__wrap.page__mainWrap
+  h2.disco__title Discography
+  section.disco__list
+    h3.disco__itemcategory
+      span.desco-ext ▼▼
+      | new release
+      span.desco-ext ▼▼
+    .disco__itemwrap
+      .disco__image
+        a(href=`${newRelease.href}` target="_blank")
+          img(src=`${newRelease.src}` width="200" height="200")
+      .disco__movie
+        iframe(src=`${newRelease.movie}` width="400" height="225" frameborder="0" allowfullscreen)
+  section.disco__list
+    h3.disco__itemcategory
+      span.desco-ext ▼▼
+      | Fantasia
+      span.desco-ext ▼▼
+    each item in fantasia
+      .disco__itemwrap
+        .disco__thumbImage
+          a(href=`${item.href}` target="_blank")
+            img(src=`${item.src}` width="120" height="120")
+  section.disco__list
+    h3.disco__itemcategory
+      span.desco-ext ▼▼
+      | Omnibus Album
+      span.desco-ext ▼▼
+    each item in omunibus
+      .disco__itemwrap
+        .disco__thumbImage
+          a(href=`${item.href}` target="_blank")
+            img(src=`${item.src}` width="120" height="120")

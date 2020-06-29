@@ -1,0 +1,44 @@
+-
+  const footerLogo = [
+    {
+      src: 'twitter_icon',
+      href: 'a',
+    },
+    {
+      src: 'line_icon',
+      href: 'b',
+    },
+    {
+      src: 'facebook_icon',
+      href: 'c',
+    },
+    {
+      src: 'mixi_icon',
+      href: 'd',
+    },
+    {
+      src: 'discord_icon',
+      href: 'e',
+    },
+  ]
+
+footer
+  .footer__wrap
+    p 当サイトの内容・テキスト・画像等の無断転載・無断使用を固く禁じます。
+    br
+    | Copyright (C) 2020 -LostFairy- All Rights Reserved.
+    br
+    img(src=`${imgPath}/logo_arsmagna.png` class="footer__logo")
+    .footer__snsWrap
+      ul.footer__snsList
+        each item in footerLogo
+          li.footer__snsItem
+            a(href=`${item.href}` target="_blank")
+              img(src=`${imgPath}/${item.src}.png`)
+.scrollImg
+  span
+    img()
+if page.is_sliderJs
+  script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
+  script(src="./src/js/slick.min.js")
+  script(src="./src/js/index.js")

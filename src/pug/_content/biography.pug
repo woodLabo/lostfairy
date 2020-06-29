@@ -1,0 +1,82 @@
+-
+  var defYears = 2020
+  const bio = [
+    ['03/01　M3-2020春<span class="bio-whitespace">★</span> Cross Fantasia Ⅱ 『悠久幻想ノスタルジア』'],
+    [
+      '12/31　コミックマーケット97<span class="bio-whitespace">★</span> 『Nostalgia Prelude...』',
+      '11/30　LIVE (ワンマン)「Soiree ～悠久幻想の章～」 ＠沼袋Section9',
+      '10/27　M3-2019秋<span class="bio-whitespace">★</span> キーホルダー「ステラ」「ルナ」',
+      '08/12　コミックマーケット96<span class="bio-whitespace">★</span> 無料配布『悠久幻想ノスタルジア -体験版-』',
+      '04/28　M3-2019春<span class="bio-whitespace">★</span> キーホルダー「アリーシャ」「カーミラ」',
+      '03/09　BAR & LIVE「第２回 あるすまカフェ」 ＠沼袋Section9'
+    ],
+    [
+      '12/30　コミックマーケット95<span class="bio-whitespace">★</span> キーホルダー「メリュジーヌ」「コレット」',
+      '10/28　M3-2018秋',
+      '09/22　LIVE (ワンマン)「Soiree ～狂気幻想の章～」 ＠池袋BlackHole',
+      '08/11　コミックマーケット94<span class="bio-whitespace">★</span> 楽曲イメージカード「黒薔薇の葬送」',
+      '04/29　M3-2018春<span class="bio-whitespace">★</span> Cross Fantasia『狂気幻想グリムガルド』',
+      '03/03　BAR & LIVE「あるすまカフェ」 ＠スタジオドラゴンカフェ'
+    ],
+    [
+      '12/31　コミックマーケット93',
+      '09/09　LIVE「Battle†Dystopia ～支配者達の饗宴～」 ＠新宿Head Power',
+      '08/11　コミックマーケット92<span class="bio-whitespace">★</span> 楽曲イメージカード「Diabolic Eye」',
+      '04/30　M3-2017春<span class="bio-whitespace">★</span> 楽曲イメージカード「呪々」'
+    ],
+    [
+      '12/30　コミックマーケット91',
+      '11/12　LIVE「LIVE†VALKYRJA ～黒焔に踊れ、紅と蒼の姫神～」 ＠池袋BlackHole',
+      '10/30　M3-2016秋<span class="bio-whitespace">★</span> 10th Fantasia『光と闇のフラグメント』',
+      '08/14　コミックマーケット90<span class="bio-whitespace">★</span> 『契り謳う黒焔のヴァルキュリア』',
+      '04/29　LIVE「Soiree ～灰の章～」 ＠上野音横丁',
+      '04/24　M3-2016春<span class="bio-whitespace">★</span> 9th Fantasia『冥府へ誘う灰のネクロフェスタ』'
+    ],
+    [
+      '12/31　コミックマーケット89',
+      '10/25　M3-2015秋<span class="bio-whitespace">★</span> 8th Fantasia『乙女が紡ぐ古のマドリガーレ』',
+      '09/27　ARTiSM MARKET 2015秋',
+      '08/16　コミックマーケット88',
+      '05/02　LIVE「Salon de Noir vol.3 -Avec Jill-」 ＠池袋CYBER',
+      '04/26　M3-2015春<span class="bio-whitespace">★</span> 『-LostFairy- Promotion CD』無料頒布。',
+      '03/29　ARTiSM MARKET 2015春'
+    ],
+    [
+      '12/30　コミックマーケット87',
+      '10/26　M3-2014秋<span class="bio-whitespace">★</span> ArsMagnA Story Album『小さな魔女と秘密の本』',
+      '08/31　LIVE「Tempest ～青と蒼の夜想曲～」 ＠新宿RUIDO K4',
+      '08/17　コミックマーケット86',
+      '04/27　M3-2014春<span class="bio-whitespace">★</span> 7th Fantasia『呪われし亡国のメフィストフェレス』'
+    ],
+    [
+      '12/31　コミックマーケット85',
+      '12/08　LIVE「Soiree ～洗礼の章～」 ＠池袋BlackHole',
+      '10/27　M3-2013秋<span class="bio-whitespace">★</span> 6th Fantasia『刻まれし悠久のアタラクシア』',
+      '08/12　コミックマーケット84',
+      '04/29　M3-2013春<span class="bio-whitespace">★</span> 5th Fantasia『滅び去る宵闇のトランシルヴァニア』'
+    ],
+    [
+      '12/31　コミックマーケット83',
+      '12/25　LIVE「Gates of Phantasmagoria」 ＠新宿RUIDO K4',
+      '10/28　M3-2012秋<span class="bio-whitespace">★</span> 4th Fantasia『不思議な少女のオペレッタ』',
+      '08/11　コミックマーケット82',
+      '04/30　M3-2012春<span class="bio-whitespace">★</span> 3rd Fantasia『祈り捧ぐ聖女のミンネザング』'
+    ],
+    [
+      '12/31　コミックマーケット81<span class="bio-whitespace">★</span>ArsMagnA Omnibus Album「PhantasmagoriA Ⅰ」',
+      '10/30　M3-2011秋<span class="bio-whitespace">★</span> 2nd Fantasia『幽閉されし黒のグリモワール』',
+      '08/13　コミックマーケット80',
+      '05/01　M3-2011春<span class="bio-whitespace">★</span> 1st Fantasia『彷徨える忘却のアエティール』'
+    ],
+  ]
+
+section.bio__wrap
+  each years, index in bio
+    section.biography__wrap
+      h2.biography__chronology
+        span.bio-ext ▼▼
+        | #{defYears - index}
+        span.bio-ext ▼▼
+      ul.biography__list
+        each items in years
+          li.biography__item !{items}

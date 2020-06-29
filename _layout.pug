@@ -1,0 +1,17 @@
+include ./src/pug/_include/_common
+include ./_config
+
+doctype
+block vars
+
+html(lang="ja")
+  head
+    include ./src/pug/_include/_head
+  body
+    include ./src/pug/_include/_header
+    include ./src/pug/_include/_nav
+    .container
+      include ./src/pug/_include/_sidebar
+      .main_content
+        block content
+    include ./src/pug/_include/_footer

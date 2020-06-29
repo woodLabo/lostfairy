@@ -1,0 +1,229 @@
+@charset "shift_jis";
+@import url("src/css/style.css");
+
+         a   { text-decoration:none;}
+a:hover { text-decoration: underline; }
+
+html {
+	scrollbar-3dlight-color:#000000;
+	scrollbar-highlight-color:#333333;
+	scrollbar-face-color:#000000;
+	scrollbar-arrow-color:#333333;
+	scrollbar-shadow-color:#333333;
+	scrollbar-darkshadow-color:#000000;
+	scrollbar-track-color:#000000;
+}
+
+
+body {
+	font-family: "メイリオ", "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+	font-size: 75%;
+	line-height: 2;
+	color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	/* background: #000000 url() repeat-x top; */
+}
+h1,h2,h3,p,ul,li{
+	margin: 0px;
+	padding: 0px;
+}
+ul{
+	list-style-type: none;
+}
+img {
+	border: none;
+	margin: 7px 5px;
+}
+a {
+	color: #FFFFFF;
+}
+a:hover {
+	color: #7b68ee;
+}
+.look {
+	color: #00ced1;
+}
+
+.midashi1 {
+	background: #00008b url();
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
+	line-height: 30px;
+}
+.arrow1 a {
+	background: url(src/img/arrow1.gif) no-repeat 10px center;
+	display: block;
+	padding-left: 25px;
+	border-bottom: 1px solid #333333;
+	padding-right: 10px;
+	width: 220px;
+	font-size: 95%;
+}
+.arrow1 a:hover {
+	background: #000000 url(src/img/arrow1.gif) no-repeat 11px center;
+}
+#left p,#right p {
+	padding: 1em 10px 0.2em;
+	line-height: 1.5;
+	font-size: 100%;
+}
+
+
+
+/*コンテナー
+------------------------------------------------------------------*/
+#container {
+	border: 1px solid #222222;
+	width: 960px;
+	background: #FFFFFF;
+	text-align: left;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+
+/*ヘッダー（写真とサイトロゴが入っているところ）
+------------------------------------------------------------------*/
+#header {
+}
+#header img {
+
+}
+#header h1 {
+	font-size: 14px;
+	color: #FFFFFF;
+	padding-left: 30px;
+	font-weight: normal;
+}
+
+
+
+/*ヘッダー下のナビメニュー
+------------------------------------------------------------------*/
+#nav {
+	background: #000000 url(src/img/nav_bg.gif) repeat-x bottom;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	text-align: right;
+	line-height: 30px;
+	font-size: 16px;
+}
+
+
+
+/*左側コンテンツ
+------------------------------------------------------------------*/
+#left {
+	width: 210px;
+	border-right: 1px solid #222222;
+	vertical-align: top;
+	background: #000000;
+}
+
+
+
+/*右側コンテンツ
+------------------------------------------------------------------*/
+#right {
+	width: 210px;
+	border-left: 1px solid #222222;
+	vertical-align: top;
+	background: #000000;
+}
+
+
+
+/*中央コンテンツ
+------------------------------------------------------------------*/
+#center {
+	width: 540px;
+	vertical-align: top;
+	padding: 10px;
+	background: #000000;
+}
+#center p {
+	padding: 0.5em 5px 1em;
+}
+
+#center h2 {
+	font-size: 100%;
+	border: 3px double #cdcdcd;
+	letter-spacing: 0.2em;
+	padding-left: 10px;
+	padding-right: 10px;
+	background: #000000 url() no-repeat right top;
+	line-height: 28px;
+	color: #cdcdcd;
+}
+
+
+
+/* lightbox用設定
+--------------------------------------------------------------------*/
+.gallery {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.gallery a img {
+	padding: 5px;
+	border: 1px solid #222222;
+	margin: 2px;
+}
+.gallery a:hover img {
+	margin: 2px;
+	padding: 5px;
+	border: 1px solid #666666;
+}
+
+
+
+
+
+
+
+/*特設-左側コンテンツ
+------------------------------------------------------------------*/
+#leftSS {
+	width: 390px;
+	border-right: 1px solid #222222;
+	vertical-align: top;
+	background: #000000;
+	text-align: center;
+}
+
+
+/*特設-中央コンテンツ
+------------------------------------------------------------------*/
+#centerSS {
+	width: 390px;
+	border-right: 1px solid #222222;
+	vertical-align: top;
+	background: #000000;
+	text-align: center;
+}
+
+
+/*特設-右側コンテンツ
+------------------------------------------------------------------*/
+#rightSS {
+	width: 220px;
+	border-left: 1px solid #222222;
+	vertical-align: top;
+	background: #000000;
+	text-align: center;
+}
+
+/*特設-ヘッダー
+------------------------------------------------------------------*/
+#headerSS {
+	height: 350px;
+	background: #000000 url() no-repeat left top;
+
+}
