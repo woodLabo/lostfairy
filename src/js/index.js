@@ -14,8 +14,8 @@ Index.prototype.slider = function() {
 };
 
 
-var index = new Index();
 if (document.querySelector(".slider__wrap")) {
+	var index = new Index();
 	index.slider();
 }
 
