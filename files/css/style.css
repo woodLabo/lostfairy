@@ -34,10 +34,11 @@ header .header__content {
   width: 100%;
 }
 
-header h1 {
-  background: url(../img/lost_cf2.png) no-repeat left top;
-  background-size: 100% 100% !important;
-  height: 600px !important;
+header .header__content--page {
+  background: url(../img/header_page.png) no-repeat left top;
+  background-size: contain;
+  height: 200px;
+  width: 100%;
 }
 
 nav {
@@ -173,7 +174,7 @@ aside {
 
 .slider__title {
   box-sizing: border-box;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1;
   margin: 10px 0 5px;
   padding: 0 10px;
@@ -247,14 +248,13 @@ aside {
 }
 
 .main_content {
-  height: 1400px;
   overflow: hidden;
   position: relative;
   width: 850px;
 }
 
 .index__wrap {
-  background: url(../img/wall_information.png);
+  background: url(../img/bg_information.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
@@ -288,13 +288,38 @@ aside {
   margin-bottom: 0;
 }
 
+.page__mainWrap {
+  height: 100%;
+  padding-top: 50px;
+  width: 100%;
+}
+
+.page__mainWrap.character__wrap {
+  background: url(../img/gb_character.png) no-repeat;
+  background-size: contain;
+}
+
+.page__mainWrap.con__wrap {
+  background: url(../img/bg_contact.png) no-repeat;
+  background-size: contain;
+}
+
+.page__mainWrap.disco__wrap {
+  background: url(../img/bg_discography.png) no-repeat;
+  background-size: contain;
+}
+
+.page__mainWrap.shop__wrap {
+  background: url(../img/bg_shop.png) no-repeat;
+  background-size: contain;
+}
+
 .mainContent__wrap {
   -ms-overflow-style: none;
   box-sizing: border-box;
   display: none;
   height: 1250px;
   overflow-y: scroll;
-  -ms-overflow-style: none;
   position: absolute;
   right: 25px;
   scrollbar-width: none;
@@ -340,9 +365,8 @@ aside {
 
 footer {
   background: #000;
-  font-family: mintyo;
-  font-size: 15px;
-  height: 100px;
+  font-family: メイリオ;
+  font-size: 12px;
   line-height: 1;
   margin-top: 20px;
   padding-top: 15px;
@@ -350,13 +374,14 @@ footer {
 
 .footer__logo {
   height: 30px;
-  margin-top: 10px;
+  margin-top: 12px !important;
   width: auto;
 }
 
 .footer__wrap {
   margin: 0 auto;
   position: relative;
+  padding: 10px 0 8px;
   width: 1200px;
 }
 
@@ -373,7 +398,7 @@ footer {
 }
 
 .footer__snsItem {
-  margin-right: 5px;
+  margin-right: 8px;
   width: 30px;
 }
 

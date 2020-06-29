@@ -97,10 +97,12 @@ ArchiveChange.prototype.changeEvent = function(tab) {
 	}
 };
 
-var archive = new ArchiveChange();
-archive.mouseover();
-archive.mouseout();
-archive.tabChange();
+if (document.querySelector(".index__archiveBt")) {
+	var archive = new ArchiveChange();
+	archive.mouseover();
+	archive.mouseout();
+	archive.tabChange();
+}
 
 var HoverEvent = function() {
 
